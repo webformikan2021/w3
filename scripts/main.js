@@ -15,14 +15,14 @@ myImage.onclick = function() {
 
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
-
+console.log(myHeading);//追加
 function setUserName() {
   let myName = prompt('Please enter your name.');
   if(!myName) {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'こんにちは, ' + myName;
+    myHeading.innerHTML = 'こんにちは, ' + myName; //Mozilla is cool,から「こんにちは」に変更
   }
 }
 
