@@ -30,7 +30,7 @@ if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.innerHTML = 'さようなら, ' + storedName; 
+  myHeading.innerHTML = 'こんにちは, ' + storedName; 
 }
 
 myButton.onclick = function() {
